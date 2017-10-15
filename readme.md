@@ -40,9 +40,11 @@ public function report(Exception $exception)
 
     parent::report($exception);
 }
+```
 Add your DSN to ``.env``:
 ```
 SENTRY_DSN=https://public:secret@sentry.example.com/1
+```
 
 ### Log Viewer
 ```bash
