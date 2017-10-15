@@ -12,6 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');ds
+  $a = 4/0;
+    return view('welcome');
 });
 Route::get('logs', '\Rap2hpoutre\LaravelLogViewer\LogViewerController@index');
