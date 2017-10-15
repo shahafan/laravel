@@ -56,7 +56,7 @@ Route::get('logs', '\Rap2hpoutre\LaravelLogViewer\LogViewerController@index');
 ```
 
 ### Travis CI
-Create [.travis.yml](../blob/master/.travis.yml) and [.env.travis](../blob/master/.env.travis) files
+Create [.travis.yml](.travis.yml) and [.env.travis](.env.travis) files
 
 ### Bitbucket Pipelines
-Create [bitbucket-pipelines.yml](../blob/master/bitbucket-pipelines.yml) file 
+Create [bitbucket-pipelines.yml](bitbucket-pipelines.yml) file 
