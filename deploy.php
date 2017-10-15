@@ -4,7 +4,7 @@ namespace Deployer;
 require 'recipe/laravel.php';
 
 // Project repository
-set('repository', 'https://github.com/shahafan/laravel');
+set('repository', 'https://github.com/shahafan/laravel-in-production');
 
 // Hosts
 
