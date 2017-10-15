@@ -1,0 +1,25 @@
+image: phpunit/phpunit:6.0.6
+ 
+pipelines:
+  default:
+    - step:
+        script:
+          - apk add --no-cache php7-gd php7-xmlwriter
+          - php -r "file_exists('.env') || copy('.env.testing', '.env');"
+          - composer install
+          - php artisan key:generate
+          - php artisan migrate
+          - php artisan serve &
+          - sleep 5
+          - phpunit
+        services:
+          - mysql
+definitions:
+  services:
+    mysql:
+      image: mysql
+      environment:
+        MYSQL_DATABASE: 'homestead'
+        MYSQL_RANDOM_ROOT_PASSWORD: 'yes'
+        MYSQL_USER: 'homestead'
+        MYSQL_PASSWORD: 'secret'
