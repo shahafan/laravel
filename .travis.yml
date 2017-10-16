@@ -16,8 +16,8 @@ before_script:
 #  ssh_known_hosts:
 #  - 45.77.140.99
 
-#script:
-#  - vendor/bin/phpunit tests
+script:
+  - vendor/bin/phpunit tests
 #  - php vendor/bin/dep deploy
 
 notifications:
