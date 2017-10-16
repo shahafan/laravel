@@ -12,6 +12,10 @@ before_script:
   - pear install pear/PHP_CodeSniffer
   - phpenv rehash
 
+addons:
+  ssh_known_hosts:
+  - 45.77.140.99
+
 script:
   - vendor/bin/phpunit tests
   - php vendor/bin/dep deploy
