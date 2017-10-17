@@ -79,7 +79,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel In Production
+                    Laravel Israel
                 </div>
 
                 <div class="links">
